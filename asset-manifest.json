@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Celebal-Project/static/css/main.5377b08d.css",
+    "main.js": "/Celebal-Project/static/js/main.20eb9e67.js",
+    "static/js/787.63e47474.chunk.js": "/Celebal-Project/static/js/787.63e47474.chunk.js",
+    "index.html": "/Celebal-Project/index.html",
+    "main.5377b08d.css.map": "/Celebal-Project/static/css/main.5377b08d.css.map",
+    "main.20eb9e67.js.map": "/Celebal-Project/static/js/main.20eb9e67.js.map",
+    "787.63e47474.chunk.js.map": "/Celebal-Project/static/js/787.63e47474.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5377b08d.css",
+    "static/js/main.20eb9e67.js"
+  ]
+}
