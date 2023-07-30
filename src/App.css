@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  color: black;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: 100vh;
+}
+
+.left {
+  background-color: pink;
+
+}
+
+
+
+
+
+.main {
+  background-color: rgb(192, 255, 199);
+  /* display: grid;
+  grid-template-rows: 1fr 1fr 4fr; */
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.up {
+  flex: 1;
+  align-items: center;
+
+
+}
+
+.task {
+  flex: 1;
+
+}
+
+.todo {
+  flex: 5;
+
+}
+
+.right {
+  background-color: rgb(169, 24, 205);
+
+}

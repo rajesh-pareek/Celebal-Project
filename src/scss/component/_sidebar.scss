@@ -1,0 +1,121 @@
+.sidebar-container {
+    background-color: var(--background-dark);
+    display: grid;
+    grid-template-rows: 1fr 1fr 7fr;
+    justify-items: center;
+    padding: 2rem 0 0 0;
+  
+    // &.open {
+    // }
+  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    &-heading {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--font-dark);
+      margin-bottom: 2rem;
+    }
+  
+    &-add {
+      font-size: 3rem;
+  
+      svg {
+        transition: 0.2s ease-in-out;
+        color: var(--font-dark);
+  
+        &:hover {
+          transform: rotateZ(5deg);
+          color: var(--hover);
+        }
+      }
+    }
+  
+    &-options {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 2rem;
+      position: relative;
+      width: 100%;
+  
+      &-underline {
+        position: absolute;
+        background-color: rgba(255, 0, 0, 0.869);
+        width: 3px;
+        height: 4.2rem;
+        transition: 0.2s ease-in;
+        right: 0;
+      }
+  
+      &-list {
+        list-style: none;
+  
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+  
+        gap: 0.2rem;
+  
+        li {
+          display: flex;
+          align-items: center;
+          font-size: 1rem;
+          color: var(--font-dark-two);
+          cursor: pointer;
+          transition: 0.2s ease-in-out;
+          padding: 1.5rem 1rem;
+  
+          &:hover {
+            background-color: rgba(128, 128, 128, 0.225);
+          }
+        }
+  
+        .active {
+          background-color: rgba(128, 128, 128, 0.225);
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .sidebar-container {
+      opacity: 0.95;
+      transition: 1s ease-in;
+      position: absolute;
+      height: 100vh;
+      transform: translateX(-100%);
+      z-index: 999;
+  
+  
+      &.open {
+        transform: translateX(0);
+   
+      }
+    }
+  
+    .sidebar-container.open {
+      display: block;
+     
+    }
+  
+    // Sidebar transition animation
+    .sidebar-container {
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    .sidebar-container-heading {
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  
+    .sidebar-container-add {
+     
+      text-align: center;
+      font-size: 2rem;
+    }
+     
+    // .sidebar-container-options-list {
+    // }
+  }
